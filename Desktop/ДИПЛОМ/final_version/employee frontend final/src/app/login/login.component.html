@@ -1,0 +1,18 @@
+<div class="background-wrap">
+    <div class="background"></div>
+</div>
+
+<form id="accesspanel" action="">
+    <h1 id="litheader">BMSU_4</h1>
+    <div class="inset">
+        <p>
+            <input type="text" name="username" [(ngModel)]="username" id="email" placeholder="Имя пользователя">
+        </p>
+        <p>
+            <input type="password" name="password" [(ngModel)]="password" id="password" placeholder="пароль">
+        </p>
+    </div>
+    <p class="p-container">
+        <input type="submit" name="Login" id="go" value="Войти" (click)="doLogin()">
+    </p>
+</form>

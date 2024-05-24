@@ -1,0 +1,29 @@
+<div class="container">
+    <div *ngIf="averageSalary !== undefined" class="salary-info">
+        <p>Средняя зарплата:</p>
+        <div class="square"> {{ averageSalary }} руб.</div>
+    </div>
+    <br>
+
+
+
+    <div *ngIf="maxSalary || minSalary !== undefined" class="salary-info">
+        <p>MAX/MIN зарплата:</p>
+        <div class="square"> {{ maxSalary }} / {{minSalary}} руб. </div>
+
+    </div>
+
+    <br>
+    <div *ngIf="employeeCount !== undefined" class="salary-info">
+        <p>Количество сотрудников:</p>
+        <div class="square"> {{ employeeCount }} чел. </div>
+    </div>
+    <br>
+    <div *ngIf="departmentCount !== undefined" class="salary-info">
+        <p>Количество отделов:</p>
+        <div class="square"> {{ departmentCount }} чел. </div>
+    </div>
+
+
+
+</div>

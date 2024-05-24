@@ -1,0 +1,27 @@
+.nav-item {
+    color: white;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+}
+
+.navbar {
+    color: white;
+    background-color: rgb(5, 17, 76);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    font-size: 3rem;
+}
+
+.logout-option {
+    display: none;
+}
+
+.nav-item:hover .logout-option {
+    /* display: inline; */
+    display: block;
+}
+
+.login_img {
+    height: 40px;
+}

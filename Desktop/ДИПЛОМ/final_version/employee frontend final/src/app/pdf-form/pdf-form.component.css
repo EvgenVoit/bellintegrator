@@ -1,0 +1,54 @@
+/* styles.css (или styles.scss) */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    /* Высота контейнера по высоте видимой области экрана */
+}
+
+.form-container {
+    width: 500px;
+    height: 300px;
+    /* Ширина контейнера формы */
+    padding: 20px;
+    background-color: rgb(5, 17, 76);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #CECECE;
+    padding-bottom: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: #CECECE;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 5px;
+    padding: 10px 20px;
+    background-color: rgb(255, 200, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(225, 177, 2)
+}

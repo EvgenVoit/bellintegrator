@@ -1,0 +1,59 @@
+<br>
+<br>
+<!-- <h1>Employee List</h1> -->
+
+<div class="container">
+
+    <div>
+        <form (ngSubmit)="goToEmployee()">
+            <div class="form-group col-md-6 inline mx-auto">
+
+                <input [(ngModel)]="EnteredID" type="text" class="form-control" id="id" name="id" placeholder="Поиск по ID">
+                <button class="btn btn-success " type="submit">Поиск</button>
+            </div>
+        </form>
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <table style="margin-bottom: 50px;" class=" table table-responsive table-striped  border-dark">
+
+            <thead class="table table-responsive table-dark ">
+                <tr>
+                    <th>Id</th>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Email</th>
+                    <!-- <th>Salary</th> -->
+                    <th>Отдел</th>
+                    <th>Должность</th>
+                    <!-- <th>Joining Date</th> -->
+                    <th>Действия</th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.id}}</td>
+                    <td>{{employee.fname}}</td>
+                    <td>{{employee.lname}}</td>
+                    <td>{{employee.email}}</td>
+                    <!-- <td>{{employee.salary}}</td> -->
+                    <td>{{employee.department}}</td>
+                    <td>{{employee.designation}}</td>
+                    <!-- <td>{{employee.joiningDate}}</td> -->
+                    <td>
+                        <button (click)="updateEmployee(employee.id)" class="btn  btn-secondary btn-sm"> Изменить</button>
+                        <button (click)="deleteEmployee(employee.id)" class="btn btn-danger btn-sm" style="margin-left: 10px"> Удалить</button>
+                        <button (click)="detailsOfEmployee(employee.id)" class="btn btn-success btn-sm " style="margin-left: 10px"> Просмотр</button>
+                    </td>
+                </tr>
+            </tbody>
+
+
+        </table>
+        <br><br><br><br>
+    </div>

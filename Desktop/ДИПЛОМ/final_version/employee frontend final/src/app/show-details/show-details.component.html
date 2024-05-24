@@ -1,0 +1,67 @@
+<br>
+
+<div class="container">
+
+    <h3>Детали сотрудника</h3>
+    <br>
+    <div class="box">
+
+        <div>
+
+            <!-- <img src="../assets/download.jpg"> -->
+            <img src="../assets/employee.png">
+        </div>
+        <div>
+            <table class=" table table-striped  border-dark  ">
+                <thead class=" table-dark">
+                    <tr>
+                        <th>Поле</th>
+                        <th>Значение</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td><b>Id</b></td>
+                        <td>{{employee.id}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Имя</b></td>
+                        <td>{{employee.fname}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Фамилия</b></td>
+                        <td>{{employee.lname}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Email</b></td>
+                        <td>{{employee.email}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Зарплата</b></td>
+                        <td>{{employee.salary}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Отдел</b></td>
+                        <td>{{employee.department}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Должность</b></td>
+                        <td>{{employee.designation}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Дата трудоустройства</b></td>
+                        <td>{{employee.joiningDate}}</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <a routerLink="/updating-by-id/{{employee.id}}" id="btn1" class="btn btn-secondary">Изменить</a>
+            <a routerLink="/show-all-employees" id="btn2" class="btn btn-danger">Назад</a>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,39 @@
+/* salary.component.css */
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* выравнивание по горизонтали */
+    align-items: center;
+    /* выравнивание по вертикали */
+}
+
+.salary-info {
+    margin-right: 20px;
+    /* добавьте отступ между блоками, если нужно */
+}
+
+.square {
+    background: rgb(5, 17, 76);
+    border: 1px solid rgb(255, 200, 0);
+    border-radius: .4em;
+    bottom: 0;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 100px;
+    background-color: rgb(255, 200, 0);
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    /* выравнивание по горизонтали внутри блока */
+    align-items: center;
+    font-weight: 500;
+    /* выравнивание по вертикали внутри блока */
+}
+
+.salary-info p {
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+}

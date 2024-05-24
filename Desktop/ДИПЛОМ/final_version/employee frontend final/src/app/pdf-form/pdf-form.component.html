@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="form-container">
+        <h1>Генерация личного дела сотрудника</h1>
+        <form (ngSubmit)="onSubmit()">
+            <label for="employeeId">ID сотрудника:</label>
+            <input type="number" id="employeeId" [(ngModel)]="employeeId" name="employeeId">
+            <button type="submit">Создать</button>
+        </form>
+    </div>
+</div>
